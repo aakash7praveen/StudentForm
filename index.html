@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        College Student Council
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+    <h1>Student Council Registration Form</h1>
+ 
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Student Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" id="name"
+                   placeholder="Enter your name" />
+        </div>
+ 
+        <div class="form-control">
+            <label for="email" id="label-email">
+                College Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email" id="email"
+                   placeholder="Enter your registered email" />
+        </div>
+ 
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" id="age"
+                   placeholder="Enter your current age" />
+        </div>
+ 
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+ 
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">B.Tech Student</option>
+                <option value="intern">Intern</option>
+                <option value="M.Tech">
+                    M.Tech Student
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+ 
+        <div class="form-control">
+            <label>Positions to apply and compete for 
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Chairman
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Vice Chairman
+                  </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Computer Society Chair
+                  </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">IEEE Chair
+                  </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">IEEE Vice Chair
+                  </input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Sports Coordinator
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Arts Coordinator
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">1st Year Representative
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">2nd Year Representative
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">3rd Year Representative
+                  </input>
+            </label>
+        </div>
+ 
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions to be considered
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                      placeholder="Enter your valuable feedback">
+            </textarea>
+        </div>
+ 
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            SUBMIT
+        </button>
+    </form>
+    <!-- <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Display success message
+            alert('Form submitted successfully!');
+            
+            // Reload the page after clicking "OK" in the alert
+            location.reload();
+        });
+    </script> -->
+    <script src="script.js"></script>
+</body>
+ 
+</html>
